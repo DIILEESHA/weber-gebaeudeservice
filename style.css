@@ -726,7 +726,7 @@ input, textarea, select, button { font-family: var(--ff-body); }
   .section { padding: 4rem 0; }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 580px) {
   .hero-h1 { font-size: 2.4rem; }
   .hero-trust { gap: .5rem 1rem; }
   .stat-n { font-size: 1.6rem; }
@@ -734,4 +734,20 @@ input, textarea, select, button { font-family: var(--ff-body); }
   .topbar { display: none; }
   body { padding-top: 0; }
   .nav { top: 0 !important; }
+
+  .ueber-img-wrap img{
+    width: 100%!important;
+  }
+
+  .stats-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 3.5rem;
+}
+
+
+.stat-box:nth-child(3){
+  grid-column: 1/3;
+}
 }
